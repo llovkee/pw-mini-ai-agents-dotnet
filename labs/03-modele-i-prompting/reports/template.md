@@ -67,11 +67,12 @@ Najlepsze wyniki dała temperatura 0.5 osiągając nieduże różnice w skuteczn
 ## EXP-04 — Structured output — JSON i walidacja
 
 | Wariant | Poprawny JSON | Exact match |
-|---------|---------------|-------------|
-| prompt | | |
-| json-schema | | |
+|---|---|---|
+| prompt | 9/10 | 0.7 |
+| json-schema | 10/10  | 0.7 |
 
 **Wnioski:**
+Korzystając z sprecyzowania json w prompcie skuteczność była przyzwoita ale dzięki skorzystaniu z json-schema osiągneliśmy skuteczność 100% co wyeliminowało błedy formatowania
 
 ## Najtrudniejsze notatki
 
