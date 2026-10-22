@@ -59,7 +59,7 @@ DeepSeek-V4-Flash
 | 1.0 | 0.61 |  (0.56 i 0.66), wysoka wariancja, valid JSON: 43–50/50 |
 
 **Wnioski:**
-Najlepsze wyniki dała temperatura 0.5 osiągając nieduże różnice w skuteczności a wyraźnie wyższy procent poprawności. Przy temperaturze 0.0 wyniki które wymagały konkretnej odpowiedzi były też dobre. Przy temperaturze 1 osiągaliśmy zarówno najlepsze i najgorsze wyniki więc to podejście o ile może dać bardzo dobry rezultat to będzie on mniej powtarzalny.
+Najlepsze wyniki dała temperatura 0.5 osiągając nieduże różnice w skuteczności a wyraźnie wyższy procent poprawności JSON. Przy temperaturze 0.0 wyniki, które były najbardziej powtarzalne w swojej skuteczności. Przy temperaturze 1 osiągaliśmy zarówno najlepsze i najgorsze wyniki więc to podejście, o ile może dać bardzo dobry rezultat to jego wynik będzie mniej powtarzalny.
 
 ## EXP-04 — Structured output — JSON i walidacja
 
