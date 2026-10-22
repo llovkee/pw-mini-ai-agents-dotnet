@@ -12,13 +12,16 @@ public static class Extraction
     // Schemat dla natywnego trybu structured output w Ollama
     public static readonly object Schema = new
     {
-        type = "object",
-        properties = new
-        {
-            floor = new { type = new[] { "integer", "null" } },
-            elevator = new { type = new[] { "boolean", "null" } }
-        },
-        required = new[] { "floor", "elevator" }
+    type = "object",
+    properties = new
+    {
+        floor = new { type = new[] { "integer", "null" } },
+        elevator = new { type = new[] { "boolean", "null" } }
+    },
+    required = new[] { "floor", "elevator" }
+        // response_format = new {
+        //     type = "json_object"
+        // }
     };
 
     public static string Prompt(string note, IEnumerable<LabeledNote>? examples = null)

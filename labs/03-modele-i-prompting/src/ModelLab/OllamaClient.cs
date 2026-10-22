@@ -42,7 +42,12 @@ public sealed class PCSSClient(HttpClient http) : IClient
                 temperature
             }
         };
-        http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "klucz-api");
+        http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "api-key");
+
+        // var tmp =  JsonSerializer.Serialize(request, Options);
+        // Console.WriteLine(tmp);
+        // throw new NotImplementedException();
+        
         
         using var response = await http.PostAsJsonAsync(
             "https://llm.hpc.psnc.pl/v1/chat/completions",

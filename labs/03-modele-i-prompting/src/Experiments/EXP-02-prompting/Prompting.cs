@@ -1,7 +1,7 @@
 // EXP-02: wpływ zero-shot, one-shot i few-shot na jakość ekstrakcji
 public static class Prompting
 {
-    private const string Model = "gemma3:4b";
+    private const string Model = "DeepSeek-V4-Flash";
 
     public static async Task RunAsync(IClient client)
     {
@@ -10,7 +10,7 @@ public static class Prompting
         var variants = new (string Name, Func<string, string> Prompt)[]
         {
             ("zero-shot", note => Extraction.Prompt(note)),
-            // TODO: przygotuj wariant one-shot (jeden przykład)
+            ("one-shot", note => Extraction.Prompt(note, examples.Where(s => s.Id == "EX-002"))),
             ("few-shot", note => Extraction.Prompt(note, examples))
         };
 

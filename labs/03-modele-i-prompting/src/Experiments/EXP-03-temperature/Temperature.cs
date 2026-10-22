@@ -4,11 +4,11 @@ using System.Diagnostics;
 public static class Temperature
 {
     // Ten sam model i prompt - zmieniamy tylko temperaturę
-    private const string Model = "gemma3:4b";
+    private const string Model = "DeepSeek-V4-Flash";
 
     private const int Repetitions = 5;
 
-    private static readonly double[] Temperatures = [0.0, 0.5, 1.0];
+    private static readonly double[] Temperatures = [0.0, 0.25, 0.5, 0.75, 1.0];
 
     public static async Task RunAsync(IClient client)
     {

@@ -1,11 +1,10 @@
 // EXP-04: ekstrakcja danych do JSON i walidacja
 public static class StructuredOutput
 {
-    private const string Model = "gemma3:4b";
+    private const string Model = "DeepSeek-V4-Flash";
 
     public static async Task RunAsync(IClient client)
     {
-        // Format JSON opisany tylko w prompcie vs natywny tryb JSON Schema w Ollama
         var variants = new (string Name, object? Format)[]
         {
             ("prompt", null),

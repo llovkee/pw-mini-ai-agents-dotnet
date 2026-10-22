@@ -3,8 +3,11 @@ public static class ModelComparison
 {
     private static readonly string[] Models =
     [
-        "bielik_11b",
-        // "DeepSeek-V3.1",
+        // "bielik_11b",
+        "DeepSeek-V3.1",
+        "DeepSeek-V4-Flash",
+        "Qwen3.5-397B-A17B"
+        
     ];
 
     public static async Task RunAsync(IClient client)

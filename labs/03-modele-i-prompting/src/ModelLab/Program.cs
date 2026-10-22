@@ -24,9 +24,11 @@ switch (experiment)
     case "EXP-04":
         await StructuredOutput.RunAsync(client);
         break;
-
+    case "FINAL":
+        await ResultAfterTest.RunAsync(client);
+        break;
     default:
-        Console.WriteLine("Wybierz EXP-01 ... EXP-04");
+        Console.WriteLine("Wybierz EXP-01 ... EXP-04 or FINAL");
         return;
 }
 
