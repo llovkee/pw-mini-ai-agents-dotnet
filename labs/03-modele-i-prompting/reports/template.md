@@ -42,15 +42,12 @@ Jak oceniamy poprawność odpowiedzi modelu? Jakie metryki przyjmujemy i dlaczeg
 
 | Model | Wariant | Floor accuracy | Elevator accuracy | Exact match | Średni czas [ms] |
 |---|---|---|---|---|---|
-| Bielik 11B | zero-shot | 0.07 | 0.10 | 0.07 | 1852 |
-| DeepSeek-V3.1 | zero-shot | 1.00 | 0.80 | 0.80 | 818 |
 | DeepSeek-V4-Flash | zero-shot | 0.73 | 0.70 | 0.57 | 247 |
 | DeepSeek-V4-Flash | one-shot | 0.90 | 0.80 | 0.75 | 199 |
 | DeepSeek-V4-Flash | few-shot | 0.95 | 0.80 | 0.75 | 176 |
-| Qwen3.5-397B-A17B | zero-shot | 1.00 | 0.90 | 0.90 | 12734 |
 
 **Wnioski:**
-Dla DeepSeek-V4-Flash dodanie my przykładów nie tylko znacznie zwiększyło procent poprawnych odpowiedzi ale też paradoksalnie zauważalnie skróciło czas generowania odpowiedzi. Chociaż dodanie pierwszego przykładu dalej poprawiało skutacznośc sprawdzenia piętra to rozpoznawanie windy już się nie zmieniło. Droższe modele za to mimo nie posiadania ani jednego przykładu dalej dawały dużo bardziej precyzyjne wyniki.
+Dla DeepSeek-V4-Flash dodanie przykładów nie tylko znacznie zwiększyło procent poprawnych odpowiedzi ale też  zauważalnie skróciło czas generowania odpowiedzi. Różnicą pomiędzy one-shot i few-shot nie jest znacząca w poprawności ale nadal poprawiło czas odpowiedzi.
 
 ## EXP-03 — Temperature
 
