@@ -7,7 +7,7 @@
 
 | Parametr | Wartość |
 |----------|---------|
-| Wersja Ollama | Korzystaliśmy z zewnętrznego API PCSS)|
+| Wersja Ollama | Korzystaliśmy z zewnętrznego API PCSS|
 | Sprzęt (CPU/GPU, RAM) | Nie dotyczy, korzystaliśmy z API |
 | Liczba dostępnych notatek | 170 |
 
