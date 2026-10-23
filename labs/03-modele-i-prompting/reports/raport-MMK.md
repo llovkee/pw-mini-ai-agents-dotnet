@@ -22,6 +22,7 @@ Jak oceniamy poprawność odpowiedzi modelu? Jakie metryki przyjmujemy i dlaczeg
 | Exact match | % poprawnie udało sie poprawnie oba powyższe|
 | Średni czas [ms] | średni czas oczekiwania na odpowiedź w ms  |
 | Poprawny JSON | to json o poprawnej strukturze oraz odpowiednimi nazwami pól |
+| Powtarzalne notatki | powtarzalność takich samych wyników przy tych samych notatkach |
 
 
 ## EXP-01 — Porównanie modeli
