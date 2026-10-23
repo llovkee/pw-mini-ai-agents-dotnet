@@ -72,9 +72,9 @@ Najlepsze wyniki dała temperatura 0.5 osiągając nieduże różnice w skuteczn
 Korzystając z sprecyzowania json w prompcie skuteczność była przyzwoita ale dzięki skorzystaniu z json-schema osiągneliśmy skuteczność 100% co wyeliminowało błedy formatowania
 
 ## Najtrudniejsze notatki
+```NOTE-007 "4 piętro, winda tylko do 3" => floor=4, elevator=false```. Nigdy nie dostaliśmy ```elevator=true```.
 
-Które notatki model najczęściej interpretował błędnie i dlaczego?
 
 ## Rekomendacja
 
-Który model i prompt wybieramy do projektu — i jakie mamy dowody, że to dobry wybór?
+Do projektu wybieramy DeepSeek-V4-Flash.
