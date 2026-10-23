@@ -17,9 +17,11 @@ Jak oceniamy poprawność odpowiedzi modelu? Jakie metryki przyjmujemy i dlaczeg
 
 | Metryka | Definicja |
 |---------|-----------|
-|% poprawnych pięter | czy podał dokładną ilość pięter |
-|% poprawnych wind|czy poprawnie powiedział czy jest winda|
-|% poprawnych obu|czy udało sie poprawnie oba powyższe|
+| Floor accuracy | % poprawnie podanych ilość pięter |
+| Elevator accuracy | % poprawnie  powiedział czy jest winda|
+| Exact match | % poprawnie udało sie poprawnie oba powyższe|
+| Średni czas [ms] | średni czas oczekiwania na odpowiedź w ms  |
+| Poprawny JSON | to json o poprawnej strukturze oraz odpowiednimi nazwami pól |
 
 
 ## EXP-01 — Porównanie modeli
@@ -77,4 +79,4 @@ Korzystając z sprecyzowania json w prompcie skuteczność była przyzwoita ale 
 
 ## Rekomendacja
 
-Do projektu wybieramy DeepSeek-V4-Flash.
+Do projektu wybieramy DeepSeek-V3.1.
